@@ -1,0 +1,10 @@
+
+powershell -ex AllSigned -c "Invoke-RestMethod 'https://aka.ms/install-azd.ps1' | Invoke-Expression"
+
+
+
+git clone https://github.com/dotnet-architecture/eShopOnWeb.git
+
+
+docker-compose build
+docker-compose up
